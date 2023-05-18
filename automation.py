@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import time
 
-username = "Username"
-password = "Password"
+username = "USERNAME"
+password = "PASSWORD"
 
 driver = webdriver.Chrome()
 
@@ -51,4 +51,3 @@ for repo in repos.find_elements("css selector", "li.public"):
 
 time.sleep(20)
 driver.close()
-driver.quit()
