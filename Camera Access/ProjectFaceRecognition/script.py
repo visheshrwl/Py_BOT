@@ -1,13 +1,12 @@
 import cv2
-import mediapipe as mp 
 
 cap = cv2.VideoCapture(0)
 
 if not(cap.isOpened()):
     print("Could not open Video Device")
 
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 640)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
 while(True):
     ret, frame = cap.read()
